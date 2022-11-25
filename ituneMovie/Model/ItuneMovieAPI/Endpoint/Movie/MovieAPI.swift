@@ -9,5 +9,4 @@ import Foundation
 
 extension ItuneMovieAPI {
     struct GetMovieList{}
-    struct GetMovieDetail{}
 }

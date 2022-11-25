@@ -14,9 +14,13 @@ class MovieViewController: UIViewController {
 
     // MARK: - IBOutlets
     @IBOutlet weak var movieCollectionView: UICollectionView!
+    @IBOutlet weak var movieCollectionViewFlowLayout: UICollectionViewFlowLayout!
     
+    @IBOutlet weak var tracknamelabel: UILabel!
     // MARK: - Navigation
+    
     // MARK: - Constant
+    
     // MARK: - Var
     var movies: [Movie] = []
     
@@ -29,6 +33,7 @@ class MovieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         viewModel.delegate = self
         viewModel.getMovieList(url: url)
         movieCollectionView.dataSource  = self
@@ -46,7 +51,8 @@ extension MovieViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCellReuseIdentifier", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCollectionCell ", for: indexPath)
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCellReuseIdentifier", for: indexPath)
         return cell
     }
 }
@@ -55,10 +61,6 @@ extension MovieViewController: UICollectionViewDataSource {
 extension MovieViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = movieCollectionView.cellForItem(at: indexPath)
-        print("item tapped", cell)
-        print("item tapped", indexPath)
-        print("item tapped", indexPath.item)
-//        print("item tapped", movies[indexPath])
         print("item tapped", movies[indexPath.item])
 //        viewModel.movieDidTap(movie: String(indexPath.item))
 //        viewModel.movieDidTap(movie: cell)
@@ -74,7 +76,6 @@ protocol movieViewControllerDelegate {
 
 extension MovieViewController: movieViewControllerDelegate {
     func updateMovieCollection(movies: [Movie]) {
-        print("movies passed back", movies)
         self.movies = movies
         self.movieCollectionView.reloadData()
     }
@@ -84,4 +85,21 @@ extension MovieViewController: movieViewControllerDelegate {
     }
     
     
+}
+
+
+// MARK: - SetupUI
+extension MovieViewController {
+    func setupUI(){
+        setupMovieCollectionFlowLayout()
+        
+    }
+}
+
+extension MovieViewController: UICollectionViewDelegateFlowLayout {
+    func setupMovieCollectionFlowLayout(){
+        let cellWidth = Int(view.frame.size.width) - 20
+        let cellHeight = 100
+        movieCollectionViewFlowLayout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+    }
 }
