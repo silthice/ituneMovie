@@ -15,8 +15,6 @@ class MovieViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var movieCollectionView: UICollectionView!
     @IBOutlet weak var movieCollectionViewFlowLayout: UICollectionViewFlowLayout!
-    
-    @IBOutlet weak var tracknamelabel: UILabel!
     // MARK: - Navigation
     
     // MARK: - Constant
@@ -51,7 +49,8 @@ extension MovieViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCollectionCell ", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCollectionViewCell", for: indexPath) as! MovieCollectionViewCell
+        cell.setupCell(with: movies[indexPath.item])
 //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCellReuseIdentifier", for: indexPath)
         return cell
     }

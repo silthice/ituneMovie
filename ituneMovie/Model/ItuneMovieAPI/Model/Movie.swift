@@ -25,6 +25,7 @@ struct Movie : Codable {
     let trackId : Int?
     let trackName : String?
     let artworkUrl60 : String?
+    let artworkUrl100 : String?
     let trackPrice : Double?
     let primaryGenreName : String?
     let shortDescription : String?
@@ -34,6 +35,7 @@ struct Movie : Codable {
         case trackId = "trackId"
         case trackName = "trackName"
         case artworkUrl60 = "artworkUrl60"
+        case artworkUrl100 = "artworkUrl100"
         case trackPrice = "trackPrice"
         case primaryGenreName = "primaryGenreName"
         case shortDescription = "shortDescription"
@@ -45,6 +47,7 @@ struct Movie : Codable {
         trackId = try values.decodeIfPresent(Int.self, forKey: .trackId)
         trackName = try values.decodeIfPresent(String.self, forKey: .trackName)
         artworkUrl60 = try values.decodeIfPresent(String.self, forKey: .artworkUrl60)
+        artworkUrl100 = try values.decodeIfPresent(String.self, forKey: .artworkUrl100)
         trackPrice = try values.decodeIfPresent(Double.self, forKey: .trackPrice)
         primaryGenreName = try values.decodeIfPresent(String.self, forKey: .primaryGenreName)
         shortDescription = try values.decodeIfPresent(String.self, forKey: .shortDescription)

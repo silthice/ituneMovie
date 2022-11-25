@@ -25,7 +25,6 @@
 		80CE6803292F82B600687003 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE6802292F82B600687003 /* Movie.swift */; };
 		80CE680529305DCD00687003 /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE680429305DCD00687003 /* MovieListResponse.swift */; };
 		80CE6809293090AE00687003 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE6807293090AE00687003 /* MovieCollectionViewCell.swift */; };
-		80CE680A293090AE00687003 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80CE6808293090AE00687003 /* MovieCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +48,6 @@
 		80CE6802292F82B600687003 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		80CE680429305DCD00687003 /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
 		80CE6807293090AE00687003 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
-		80CE6808293090AE00687003 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				80CE6807293090AE00687003 /* MovieCollectionViewCell.swift */,
-				80CE6808293090AE00687003 /* MovieCollectionViewCell.xib */,
 			);
 			path = Subview;
 			sourceTree = "<group>";
@@ -271,7 +268,6 @@
 				80CE67D7292F589D00687003 /* LaunchScreen.storyboard in Resources */,
 				80CE67D4292F589D00687003 /* Assets.xcassets in Resources */,
 				80CE67EA292F5DD800687003 /* Movie.storyboard in Resources */,
-				80CE680A293090AE00687003 /* MovieCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
