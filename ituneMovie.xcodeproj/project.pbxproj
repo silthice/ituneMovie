@@ -25,6 +25,8 @@
 		80CE6803292F82B600687003 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE6802292F82B600687003 /* Movie.swift */; };
 		80CE680529305DCD00687003 /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE680429305DCD00687003 /* MovieListResponse.swift */; };
 		80CE6809293090AE00687003 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE6807293090AE00687003 /* MovieCollectionViewCell.swift */; };
+		80CE680C2930AB9000687003 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE680B2930AB9000687003 /* CollectionReusableView.swift */; };
+		80CE680E2930AF3200687003 /* MovieCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE680D2930AF3200687003 /* MovieCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		80CE6802292F82B600687003 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		80CE680429305DCD00687003 /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
 		80CE6807293090AE00687003 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		80CE680B2930AB9000687003 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		80CE680D2930AF3200687003 /* MovieCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				80CE6807293090AE00687003 /* MovieCollectionViewCell.swift */,
+				80CE680B2930AB9000687003 /* CollectionReusableView.swift */,
+				80CE680D2930AF3200687003 /* MovieCollectionReusableView.swift */,
 			);
 			path = Subview;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80CE6803292F82B600687003 /* Movie.swift in Sources */,
+				80CE680C2930AB9000687003 /* CollectionReusableView.swift in Sources */,
 				80CE67CF292F589C00687003 /* ViewController.swift in Sources */,
 				80CE67EE292F6BD900687003 /* APIService.swift in Sources */,
 				80CE67CB292F589C00687003 /* AppDelegate.swift in Sources */,
@@ -293,6 +300,7 @@
 				80CE6809293090AE00687003 /* MovieCollectionViewCell.swift in Sources */,
 				80CE680529305DCD00687003 /* MovieListResponse.swift in Sources */,
 				80CE67F2292F6D2800687003 /* GetMovieList.swift in Sources */,
+				80CE680E2930AF3200687003 /* MovieCollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

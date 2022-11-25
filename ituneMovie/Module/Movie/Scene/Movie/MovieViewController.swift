@@ -36,6 +36,7 @@ class MovieViewController: UIViewController {
         viewModel.getMovieList(url: url)
         movieCollectionView.dataSource  = self
         movieCollectionView.delegate = self
+        movieCollectionView.register(CollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CollectionReusableView.identifier)
     }
     
     
@@ -44,6 +45,7 @@ class MovieViewController: UIViewController {
 
 // MARK: - Extends CollectionViewDataSource protocol
 extension MovieViewController: UICollectionViewDataSource {
+     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return movies.count
     }
@@ -54,6 +56,20 @@ extension MovieViewController: UICollectionViewDataSource {
 //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCellReuseIdentifier", for: indexPath)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "MovieCollectionReusableView", for: indexPath) as! MovieCollectionReusableView
+        header.setupHeader()
+        return header
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//            return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CollectionReusableView.identifier, for: indexPath)
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+//        return CGSize(width: view.frame.size.width, height: 80)
+//    }
 }
 
 // MARK: - Extends CollectionViewDelegate protocol
