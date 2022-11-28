@@ -49,15 +49,20 @@ class MovieCollectionViewCell: UICollectionViewCell {
 }
 extension MovieCollectionViewCell {
     func favToggle(){
-        let favIdArray = defaults.array(forKey: "FavIdArr") as? [Int] ?? [Int]()
+        
+        guard
+            let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
+            var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else { return }
+        
         var fillColor: UIColor
-        if favIdArray.contains(movie!.trackId){
+        fillColor = .systemBackground
+        
+        if favMovieArray.contains(where: {$0.trackId == movie?.trackId}){
             fillColor = .red
-        } else {
-            fillColor = .systemBackground
         }
         
         favoriteImageView.image = UIImage(systemName: "heart.fill")?.withTintColor(fillColor, renderingMode: .alwaysOriginal)
+        
     }
 }
 
@@ -68,70 +73,48 @@ extension MovieCollectionViewCell {
     
     @objc func buttonTapped(sender : UIButton) {
         print("pressed")
-//        print(movie)
-        print([movie?.trackId])
         
-//        if let appDomain = Bundle.main.bundleIdentifier {
-//        UserDefaults.standard.removePersistentDomain(forName: appDomain)
-//         }
-  
-        var favIdArray = defaults.array(forKey: "FavIdArr") as? [Int] ?? [Int]()
-        print("favIdArray", favIdArray)
-        if favIdArray.count > 0 {
-            //if list has favorite movie
-            if favIdArray.contains(movie!.trackId){
-                print("found this item")
-                if let index = favIdArray.firstIndex(of: movie!.trackId){
-                    favIdArray.remove(at: index)
-                    defaults.set(favIdArray, forKey: "FavIdArr")
-                }
-            } else {
-                //append current movie to list
-                favIdArray.append(movie!.trackId)
-                defaults.set(favIdArray, forKey: "FavIdArr")
-//                defaults.set(temp, forKey: "FavIdArr")
-            }
-        } else {
-            //if no favorite movie in list, add to list
-            defaults.set([movie?.trackId], forKey: "FavIdArr")
+        guard
+           let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
+           var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else {
+            save(movies: [movie!])
+            return
         }
+        
+        if favMovieArray.count > 0 {
+            
+            if favMovieArray.contains(where: {$0.trackId == movie?.trackId}){
+                if let index = favMovieArray.firstIndex(of: movie!){
+                    favMovieArray.remove(at: index)
+                    save(movies: favMovieArray)
+                }
+            } else{
+                favMovieArray.append(movie!)
+                save(movies: favMovieArray)
+            }
+            
+        } else {
+            save(movies: [movie!])
+        }
+        
         favToggle()
-
-//        print(favIdArray)
-//
-//        if favIdArray.contains(movie!.trackId){
-//
-//        } else {
-//
-//        }
-//        if let favIdArray = defaults.array(forKey: "FavIdArr") {
-//
-//            if favIdArray.contains(975080816){
-////            if favIdArray.contains(where: movie?.trackId){
-//                print("found")
-//
-//            }
-//           print(favIdArray)
-//
-//            //            let arr: [Int] = []
-//            //            arr.app
-//            //            print(favIdArray)
-//            //
-//            //            if let isFavorited = favIdArray.contains(movie?.trackId){
-//            //                favIdArray.remove
-//            //            }
-//        } else {
-//            defaults.set([movie?.trackId], forKey: "FavIdArr")
-//        }
-////
-//        let fsavedArray = defaults.object(forKey: "SavedArray") as? [String] ?? [String]()
-//        print("bfore", fsavedArray)
-//
-//        let array = ["Hello", "World"]
-//        defaults.set(array, forKey: "SavedArray")
-//
-//        let savedArray = defaults.object(forKey: "SavedArray") as? [String] ?? [String]()
-//        print("after", savedArray)
-
     }
+}
+
+extension MovieCollectionViewCell {
+    func save(movies: [Movie]) {
+        if let encodedData = try? JSONEncoder().encode(movies){
+            UserDefaults.standard.set(encodedData, forKey: "FavMovieArray")
+        }
+    }
+    
+//    func load()-> {
+//         guard
+//            let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
+//            let savedItems = try? JSONDecoder().decode([Movie].self, from: <#T##Data#>) else {
+//             return
+//         }
+//
+//        self.movies = savedItems
+//    }
 }

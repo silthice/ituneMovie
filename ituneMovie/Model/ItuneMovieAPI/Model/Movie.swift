@@ -21,7 +21,7 @@ import Foundation
 //    }
 //}
 
-struct Movie : Codable {
+struct Movie : Codable, Equatable {
     let trackId : Int
 //    let trackId : Int?
     let trackName : String?

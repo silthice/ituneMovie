@@ -21,6 +21,7 @@ class MovieViewController: UIViewController {
     
     // MARK: - Var
     var movies: [Movie] = []
+    var favMovies: [Movie] = []
     
     
     // MARK: - MVVM
