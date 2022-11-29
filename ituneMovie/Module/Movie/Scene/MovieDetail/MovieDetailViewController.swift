@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol MovieDetailViewControllerDelegate: class {
+    func test()
+}
+
 class MovieDetailViewController: UIViewController {
     
     var movieDetail: Movie?
@@ -20,6 +24,8 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var artistValueLabel: UILabel!
     @IBOutlet weak var priceValueLabel: UILabel!
     @IBOutlet weak var descriptionValueLabel: UILabel!
+    
+    weak var delegate: MovieDetailViewControllerDelegate?
     
     
     
@@ -43,8 +49,23 @@ class MovieDetailViewController: UIViewController {
 
 extension MovieDetailViewController {
     func setupRightBarItem() {
+        favToggle()
+    }
+    
+    
+    
+    func favToggle(){
+        
+        guard
+            let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
+            var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else { return }
+        
         var fillColor: UIColor
         fillColor = .systemBackground
+        
+        if favMovieArray.contains(where: {$0.trackId == movieDetail?.trackId}){
+            fillColor = .red
+        }
         
         let favButton = UIImage(systemName: "heart.fill")?.withTintColor(fillColor, renderingMode: .alwaysOriginal)
         self.navigationItem.rightBarButtonItem =
@@ -54,6 +75,31 @@ extension MovieDetailViewController {
     
     @objc func favDidTap() {
         print("hello")
+        
+        guard
+           let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
+           var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else {
+            save(movies: [movieDetail!])
+            return
+        }
+        
+        if favMovieArray.count > 0 {
+            
+            if favMovieArray.contains(where: {$0.trackId == movieDetail?.trackId}){
+                if let index = favMovieArray.firstIndex(of: movieDetail!){
+                    favMovieArray.remove(at: index)
+                    save(movies: favMovieArray)
+                }
+            } else{
+                favMovieArray.append(movieDetail!)
+                save(movies: favMovieArray)
+            }
+            
+        } else {
+            save(movies: [movieDetail!])
+        }
+        
+        favToggle()
         
     }
     
@@ -75,5 +121,14 @@ extension MovieDetailViewController {
         // substr get date instead date format
         var releaseDate = movieDetail?.releaseDate
         releaseDateValueLabel.text = String(releaseDate!.prefix(10))
+    }
+}
+
+
+extension MovieDetailViewController {
+    func save(movies: [Movie]) {
+        if let encodedData = try? JSONEncoder().encode(movies){
+            UserDefaults.standard.set(encodedData, forKey: "FavMovieArray")
+        }
     }
 }

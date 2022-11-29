@@ -35,6 +35,10 @@ class MovieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         setupUI()
         viewModel.delegate = self
         viewModel.getMovieList(url: url)
