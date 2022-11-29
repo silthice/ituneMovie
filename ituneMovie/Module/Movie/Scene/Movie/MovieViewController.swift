@@ -26,6 +26,9 @@ class MovieViewController: UIViewController {
     
     // MARK: - MVVM
     let viewModel = MovieViewModel()
+    let movieDetailController = MovieDetailViewController()
+    
+    
     
     // MARK: - Constant
     let url: String = "https://itunes.apple.com/search?term=star&country=au&media=movie&;all"
@@ -77,10 +80,19 @@ extension MovieViewController: UICollectionViewDataSource {
 extension MovieViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = movieCollectionView.cellForItem(at: indexPath)
-        print("item tapped", movies[indexPath.item])
-//        viewModel.movieDidTap(movie: String(indexPath.item))
-//        viewModel.movieDidTap(movie: cell)
+//        print("item tapped", movies[indexPath.item])
+        
+//        let storyboard: UIStoryboard = UIStoryboard(name: "MovieDetailView", bundle: nil)
+//        let movieDetailController: MovieDetailViewController = storyboard.instantiateViewController(withIdentifier: "MovieDetailView") as! MovieDetailViewController
+        movieDetailController.movieDetail = movies[indexPath.item]
+////        viewModel.movieDidTap(movie: String(indexPath.item))
+////        viewModel.movieDidTap(movie: cell)
+        self.navigationController?.pushViewController(movieDetailController, animated: true)
     }
+    
+//    override func performSegue(withIdentifier identifier: String, sender: Any?) {
+//        <#code#>
+//    }
 }
 
 
