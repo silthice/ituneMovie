@@ -39,6 +39,7 @@ class MovieDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
 //        print("passed", movieDetail)
+        setupNavigationBar()
         setupRightBarItem()
         setupMovieDetails()
     }
@@ -48,6 +49,12 @@ class MovieDetailViewController: UIViewController {
 }
 
 extension MovieDetailViewController {
+    
+    func setupNavigationBar(){
+        navigationController?.navigationBar.backgroundColor = .darkGray
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+    
     func setupRightBarItem() {
         favToggle()
     }

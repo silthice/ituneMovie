@@ -9,6 +9,7 @@ import UIKit
 
 class MovieCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var cellContentView: UIView!
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var trackNameValueLabel: UILabel!
     @IBOutlet weak var genreValueLabel: UILabel!
@@ -38,6 +39,10 @@ class MovieCollectionViewCell: UICollectionViewCell {
         if let data = data {
             movieImageView.image = UIImage(data: data)
         }
+        
+        
+        cellContentView.layer.borderColor = UIColor.white.cgColor
+        cellContentView.layer.borderWidth = 2
         
         
         

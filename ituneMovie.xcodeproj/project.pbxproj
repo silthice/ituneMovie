@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		808B46CC2935D679007906C4 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B46CB2935D679007906C4 /* UIColor + Extensions.swift */; };
 		80CE67CB292F589C00687003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67CA292F589C00687003 /* AppDelegate.swift */; };
 		80CE67CD292F589C00687003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67CC292F589C00687003 /* SceneDelegate.swift */; };
 		80CE67CF292F589C00687003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67CE292F589C00687003 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		808B46CB2935D679007906C4 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
 		80CE67C7292F589C00687003 /* ituneMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ituneMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CE67CA292F589C00687003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80CE67CC292F589C00687003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		808B46CA2935D660007906C4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				808B46CB2935D679007906C4 /* UIColor + Extensions.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		80CE67BE292F589C00687003 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		80CE67C9292F589C00687003 /* ituneMovie */ = {
 			isa = PBXGroup;
 			children = (
+				808B46CA2935D660007906C4 /* Helper */,
 				80CE67EB292F6BC100687003 /* Model */,
 				80CE67DE292F5AB500687003 /* Module */,
 				80CE67CA292F589C00687003 /* AppDelegate.swift */,
@@ -148,8 +159,8 @@
 		80CE67E3292F5B5700687003 /* MovieDetail */ = {
 			isa = PBXGroup;
 			children = (
-				80CE68172935A48300687003 /* MovieDetailViewController.swift */,
 				80CE68182935A48300687003 /* MovieDetailViewController.xib */,
+				80CE68172935A48300687003 /* MovieDetailViewController.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -299,6 +310,7 @@
 				80CE67F6292F6D9800687003 /* ItuneMovieAPI.swift in Sources */,
 				80CE67CD292F589C00687003 /* SceneDelegate.swift in Sources */,
 				80CE67FB292F71A600687003 /* ItuneMovieBaseTarget.swift in Sources */,
+				808B46CC2935D679007906C4 /* UIColor + Extensions.swift in Sources */,
 				80CE67FF292F71BD00687003 /* ItuneMovieBaseRequest.swift in Sources */,
 				80CE67F8292F6E5200687003 /* MovieAPI.swift in Sources */,
 				80CE67FD292F71B200687003 /* ItuneMovieBaseResponse.swift in Sources */,

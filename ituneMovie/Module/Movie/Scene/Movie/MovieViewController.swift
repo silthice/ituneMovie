@@ -13,6 +13,7 @@ class MovieViewController: UIViewController {
   
 
     // MARK: - IBOutlets
+    @IBOutlet var safeAreaView: UIView!
     @IBOutlet weak var movieCollectionView: UICollectionView!
     @IBOutlet weak var movieCollectionViewFlowLayout: UICollectionViewFlowLayout!
     // MARK: - Navigation
@@ -39,6 +40,7 @@ class MovieViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
         setupUI()
         viewModel.delegate = self
         viewModel.getMovieList(url: url)
@@ -46,6 +48,14 @@ class MovieViewController: UIViewController {
         movieCollectionView.delegate = self
         movieCollectionView.register(CollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CollectionReusableView.identifier)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+            return .lightContent
+        }
     
     
 
@@ -124,7 +134,6 @@ extension MovieViewController: movieViewControllerDelegate {
 extension MovieViewController {
     func setupUI(){
         setupMovieCollectionFlowLayout()
-        
     }
 }
 
