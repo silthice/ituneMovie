@@ -43,6 +43,7 @@ class MovieCollectionViewCell: UICollectionViewCell {
         
         cellContentView.layer.borderColor = UIColor.white.cgColor
         cellContentView.layer.borderWidth = 2
+        cellContentView.layer.cornerRadius = 6
         
         
         

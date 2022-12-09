@@ -40,17 +40,17 @@ class MovieViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
+//        self.navigationController?.isNavigationBarHidden = true
         setupUI()
         viewModel.delegate = self
         viewModel.getMovieList(url: url)
         movieCollectionView.dataSource  = self
         movieCollectionView.delegate = self
-        movieCollectionView.register(CollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CollectionReusableView.identifier)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = false
+//        self.navigationController?.isNavigationBarHidden = false
+//        title = ""
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -133,6 +133,7 @@ extension MovieViewController: movieViewControllerDelegate {
 // MARK: - SetupUI
 extension MovieViewController {
     func setupUI(){
+        title = "iTunes Movie List"
         setupMovieCollectionFlowLayout()
     }
 }

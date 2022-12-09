@@ -240,7 +240,9 @@
                             <constraint firstItem="HoJ-Ay-Qhv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="YxS-85-kID"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="4AQ-GD-kpV"/>
+                    <navigationItem key="navigationItem" id="4AQ-GD-kpV">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="DY8-Yn-XcU"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="movieCollectionView" destination="HoJ-Ay-Qhv" id="sSs-Zt-eXl"/>
                         <outlet property="movieCollectionViewFlowLayout" destination="w8O-ag-Bk0" id="Vvg-1y-EOy"/>

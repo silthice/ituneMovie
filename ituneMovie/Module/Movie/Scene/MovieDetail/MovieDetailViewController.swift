@@ -59,8 +59,6 @@ extension MovieDetailViewController {
         favToggle()
     }
     
-    
-    
     func favToggle(){
         
         guard
