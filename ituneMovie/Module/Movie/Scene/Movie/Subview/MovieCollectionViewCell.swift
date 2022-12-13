@@ -61,7 +61,7 @@ extension MovieCollectionViewCell {
             var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else { return }
         
         var fillColor: UIColor
-        fillColor = .systemBackground
+        fillColor = .white
         
         if favMovieArray.contains(where: {$0.trackId == movie?.trackId}){
             fillColor = .red
