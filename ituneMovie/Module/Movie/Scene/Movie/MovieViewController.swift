@@ -16,6 +16,12 @@ class MovieViewController: UIViewController {
     @IBOutlet var safeAreaView: UIView!
     @IBOutlet weak var movieCollectionView: UICollectionView!
     @IBOutlet weak var movieCollectionViewFlowLayout: UICollectionViewFlowLayout!
+    
+    @IBAction func drawerDidTap(_ sender: Any) {
+        print("drawer tapped ")
+        let drawerMenu = DrawerMenuViewController()
+        present(drawerMenu, animated: true)
+    }
     // MARK: - Navigation
     
     // MARK: - Constant
