@@ -26,7 +26,10 @@ class DrawerMenuViewController: UIViewController {
 //            let favourtieMovieListController = self.storyboard?.instantiateViewController(withIdentifier: "FavouriteMovieListViewController") as! FavouriteMovieListViewController
             favourtieMovieListController.modalPresentationStyle = .overFullScreen
             favourtieMovieListController.modalTransitionStyle = .crossDissolve
+//            let nav = UINavigationController(rootViewController: favourtieMovieListController)
+//            return nav
             pvc?.present(favourtieMovieListController, animated: true, completion: nil)
+//            pvc?.present(nav, animated: true, complextion: nil)
         })
         
     }
