@@ -8,9 +8,7 @@
 import UIKit
 import Kingfisher
 
-protocol MovieDetailViewControllerDelegate: class {
-    func test()
-}
+
 
 class MovieDetailViewController: UIViewController {
     
@@ -26,10 +24,6 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var priceValueLabel: UILabel!
     @IBOutlet weak var descriptionValueLabel: UILabel!
     
-    weak var delegate: MovieDetailViewControllerDelegate?
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,14 +33,10 @@ class MovieDetailViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        print("passed", movieDetail)
         setupNavigationBar()
         setupRightBarItem()
         setupMovieDetails()
     }
-    
-    
-
 }
 
 extension MovieDetailViewController {
@@ -80,8 +70,6 @@ extension MovieDetailViewController {
     }
     
     @objc func favDidTap() {
-        print("hello")
-        
         guard
            let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
            var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else {

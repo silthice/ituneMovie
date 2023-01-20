@@ -76,8 +76,6 @@ extension MovieCollectionViewCell {
     }
     
     @objc func buttonTapped(sender : UIButton) {
-        print("pressed")
-        
         guard
            let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
            var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else {
@@ -112,14 +110,4 @@ extension MovieCollectionViewCell {
             UserDefaults.standard.set(encodedData, forKey: "FavMovieArray")
         }
     }
-    
-//    func load()-> {
-//         guard
-//            let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
-//            let savedItems = try? JSONDecoder().decode([Movie].self, from: <#T##Data#>) else {
-//             return
-//         }
-//
-//        self.movies = savedItems
-//    }
 }

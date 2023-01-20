@@ -19,18 +19,10 @@ class MovieCollectionReusableView: UICollectionReusableView {
         let dateToSet = dateFormatter.string(from: date)
         
         if let prevDate = UserDefaults.standard.string(forKey: "prevDate") {
-//            dateLabel.text = dateFormatter.string(from: prev)
             dateLabel.text = prevDate
             UserDefaults.standard.set(dateToSet, forKey: "prevDate")
         } else{
             dateLabel.text = dateToSet
         }
-//        UserDefaults.standard.set(dateToSet, forKey: "prevDate")
-//
-//        let myString = UserDefaults.standard.string(forKey: "prevDate")
-//            print("myString", myString)
-        
-//        dateLabel.text = dateFormatter.string(from: date)
-        
     }
 }

@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "346F2CC7-6AF0-4452-AD10-C832CB8927CE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ituneMovie/Module/Movie/Scene/Favourite Movie List/FavouriteMovieListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "09460D91-97CE-451D-8C2B-D2A5AC75C559"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -30,8 +14,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Favourite Movie List/FavouriteMovieListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,41 +30,9 @@
             filePath = "ituneMovie/Module/Movie/Scene/Favourite Movie List/FavouriteMovieListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AC4D5EC9-D7A4-408A-BA28-3D085B59D841"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "favouriteMoviesButton(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "151305C0-A96B-4888-87FB-278817816B01"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "favouriteMoviesButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -94,88 +46,9 @@
             filePath = "ituneMovie/Module/Movie/Scene/Movie/MovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "drawerDidTap(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EE120530-3CC1-4D05-A2AE-2180DCD70322"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "favouriteMoviesButton(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EE120530-3CC1-4D05-A2AE-2180DCD70322 - 65a0a65b4f2e475a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in ituneMovie.DrawerMenuViewController.favouriteMoviesButton(Any) -&gt; ()"
-                  moduleName = "ituneMovie"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/giap/Desktop/iosgiap/ituneMovie/ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "191">
-               </Location>
-               <Location
-                  uuid = "EE120530-3CC1-4D05-A2AE-2180DCD70322 - 65a0a65b4f2e475a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in ituneMovie.DrawerMenuViewController.favouriteMoviesButton(Any) -&gt; ()"
-                  moduleName = "ituneMovie"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/giap/Desktop/iosgiap/ituneMovie/ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "280">
-               </Location>
-               <Location
-                  uuid = "EE120530-3CC1-4D05-A2AE-2180DCD70322 - 65a0a65b4f2e475a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in ituneMovie.DrawerMenuViewController.favouriteMoviesButton(Any) -&gt; ()"
-                  moduleName = "ituneMovie"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/giap/Desktop/iosgiap/ituneMovie/ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "313">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A524BBC9-D079-4001-BE54-61E3D7AAC6A9"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "favouriteMoviesButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -189,8 +62,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Movie/Subview/MovieCollectionViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "buttonTapped(sender:)"
             landmarkType = "7">
             <Locations>
@@ -237,8 +110,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Movie/Subview/MovieCollectionViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "buttonTapped(sender:)"
             landmarkType = "7">
             <Locations>
@@ -285,8 +158,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Movie/Subview/MovieCollectionViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "buttonTapped(sender:)"
             landmarkType = "7">
             <Locations>
@@ -333,8 +206,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Movie/Subview/MovieCollectionViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "buttonTapped(sender:)"
             landmarkType = "7">
             <Locations>
@@ -381,8 +254,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Movie/Subview/MovieCollectionViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "buttonTapped(sender:)"
             landmarkType = "7">
             <Locations>
@@ -429,8 +302,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Movie/Subview/MovieCollectionViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "buttonTapped(sender:)"
             landmarkType = "7">
             <Locations>
@@ -477,8 +350,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Movie/MovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -493,8 +366,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Movie/MovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "updateMovieCollection(movies:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -509,8 +382,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Movie/MovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "updateMovieCollection(movies:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -525,25 +398,9 @@
             filePath = "ituneMovie/Module/Movie/Scene/Movie/MovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DB5DCC96-27D0-4EA7-A0AD-1F000D4612B8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ituneMovie/Module/Movie/Scene/Movie/MovieViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "refresh()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

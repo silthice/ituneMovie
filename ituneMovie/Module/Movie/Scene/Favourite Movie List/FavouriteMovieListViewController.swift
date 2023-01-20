@@ -14,7 +14,6 @@ class FavouriteMovieListViewController: UIViewController {
     @IBOutlet var safeAreaView: UIView!
    
     @IBAction func closeButtonDidTap(_ sender: Any) {
-        print("close pressed")
         self.delegate?.refresh()
         self.dismiss(animated: true)
     }
@@ -28,11 +27,8 @@ class FavouriteMovieListViewController: UIViewController {
     // MARK: - Var
     var favMovies: [Movie] = []
     var delegate: movieViewControllerDelegate?
-    var delegate2: MovieDelegate?
-    
     
     // MARK: - MVVM
-//    let viewModel = MovieViewModel()
     let movieDetailController = MovieDetailViewController()
     
     
@@ -52,19 +48,12 @@ class FavouriteMovieListViewController: UIViewController {
         var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else { return }
         favMovies = favMovieArray
         
-        
-        print("safeareaview", safeAreaView)
-        print("favMovieCollectionView", favMovieCollectionView)
         title = "TEST 123"
         
         
         let button = UIButton(type: .custom)
         let image = UIImage(systemName: "xmark")?.withRenderingMode(.alwaysTemplate)
         closeButton.setImage(image, for: .normal)
-//        let closeButtonColor: UIColor = .white
-//        let closeButtonColor: UIColor = .dynamicColor(light: UIColor.black, dark: UIColor.white)
-
-        
         let closeButtonColor: UIColor = .dynamicColor(light: UIColor(hexString: "#000000"), dark: UIColor(hexString: "#FFFFFF"))
                 closeButton.tintColor = closeButtonColor
         
@@ -105,14 +94,8 @@ extension FavouriteMovieListViewController: UICollectionViewDataSource {
 extension FavouriteMovieListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = favMovieCollectionView.cellForItem(at: indexPath)
-
         movieDetailController.movieDetail = favMovies[indexPath.item]
         self.navigationController?.pushViewController(movieDetailController, animated: true)
-        
-//        self.view.window?.rootViewController?.dismiss(animated: false, completion: {
-//            print("ahha")
-//            self.delegate?.testNav(selectedMovie: self.favMovies[indexPath.item])
-//        })
     }
 }
 
