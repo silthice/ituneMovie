@@ -26,6 +26,8 @@ class FavouriteMovieListViewController: UIViewController {
     
     // MARK: - Var
     var favMovies: [Movie] = []
+    var delegate: movieViewControllerDelegate?
+    var delegate2: MovieDelegate?
     
     
     // MARK: - MVVM
@@ -67,10 +69,12 @@ class FavouriteMovieListViewController: UIViewController {
         
         favMovieCollectionView.dataSource = self
         favMovieCollectionView.delegate = self
+        self.navigationController?.navigationBar.isHidden = true
         
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -100,11 +104,14 @@ extension FavouriteMovieListViewController: UICollectionViewDataSource {
 extension FavouriteMovieListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = favMovieCollectionView.cellForItem(at: indexPath)
+
         movieDetailController.movieDetail = favMovies[indexPath.item]
         self.navigationController?.pushViewController(movieDetailController, animated: true)
         
-//        let nav = UINavigationController(rootViewController: screen)
-//        return nav
+//        self.view.window?.rootViewController?.dismiss(animated: false, completion: {
+//            print("ahha")
+//            self.delegate?.testNav(selectedMovie: self.favMovies[indexPath.item])
+//        })
     }
 }
 

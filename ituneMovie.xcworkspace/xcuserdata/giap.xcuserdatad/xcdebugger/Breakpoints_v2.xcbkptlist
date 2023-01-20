@@ -14,8 +14,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Favourite Movie List/FavouriteMovieListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "ituneMovie/Module/Movie/Scene/Favourite Movie List/FavouriteMovieListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -40,15 +40,142 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "39248829-79F1-46B7-B39C-11E2A1FF4DD5"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ituneMovie/Module/Movie/Scene/Favourite Movie List/FavouriteMovieListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC4D5EC9-D7A4-408A-BA28-3D085B59D841"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "favouriteMoviesButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "151305C0-A96B-4888-87FB-278817816B01"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "favouriteMoviesButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1DE0B13B-D753-4FAA-9D6E-F6DF32978B1E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ituneMovie/Module/Movie/Scene/Movie/MovieViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "drawerDidTap(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE120530-3CC1-4D05-A2AE-2180DCD70322"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "favouriteMoviesButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EE120530-3CC1-4D05-A2AE-2180DCD70322 - 65a0a65b4f2e475a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in ituneMovie.DrawerMenuViewController.favouriteMoviesButton(Any) -&gt; ()"
+                  moduleName = "ituneMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giap/Desktop/iosgiap/ituneMovie/ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "191">
+               </Location>
+               <Location
+                  uuid = "EE120530-3CC1-4D05-A2AE-2180DCD70322 - 65a0a65b4f2e475a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in ituneMovie.DrawerMenuViewController.favouriteMoviesButton(Any) -&gt; ()"
+                  moduleName = "ituneMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giap/Desktop/iosgiap/ituneMovie/ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "EE120530-3CC1-4D05-A2AE-2180DCD70322 - 65a0a65b4f2e475a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in ituneMovie.DrawerMenuViewController.favouriteMoviesButton(Any) -&gt; ()"
+                  moduleName = "ituneMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giap/Desktop/iosgiap/ituneMovie/ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "313">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A524BBC9-D079-4001-BE54-61E3D7AAC6A9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ituneMovie/Module/Drawer/DrawerMenuViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "favouriteMoviesButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

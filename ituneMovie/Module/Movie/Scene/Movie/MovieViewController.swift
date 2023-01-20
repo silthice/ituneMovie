@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol MovieDelegate {
+    func hehe()
+}
+
 class MovieViewController: UIViewController {
     
     
@@ -20,6 +24,8 @@ class MovieViewController: UIViewController {
     @IBAction func drawerDidTap(_ sender: Any) {
         print("drawer tapped ")
         let drawerMenu = DrawerMenuViewController()
+        drawerMenu.delegate = self
+        drawerMenu.delegate2 = self
         present(drawerMenu, animated: true)
     }
     // MARK: - Navigation
@@ -120,6 +126,7 @@ extension MovieViewController: UICollectionViewDelegate {
 protocol movieViewControllerDelegate {
     func updateMovieCollection(movies: [Movie])
     func showErrorAlert(errorMessage: String?)
+    func testNav(selectedMovie: Movie)
 }
 
 extension MovieViewController: movieViewControllerDelegate {
@@ -130,6 +137,13 @@ extension MovieViewController: movieViewControllerDelegate {
     
     func showErrorAlert(errorMessage: String?) {
         //showerrror
+    }
+    
+    func testNav(selectedMovie: Movie) {
+        print("navigate to here")
+        
+        movieDetailController.movieDetail = selectedMovie
+        self.navigationController?.pushViewController(movieDetailController, animated: true)
     }
     
     
@@ -150,4 +164,18 @@ extension MovieViewController: UICollectionViewDelegateFlowLayout {
         let cellHeight = 100
         movieCollectionViewFlowLayout.itemSize = CGSize(width: cellWidth, height: cellHeight)
     }
+}
+
+//extension MovieViewController: FavDelegate {
+//    func testnavnav() {
+//        print("test from navnanv")
+//    }
+//}
+
+extension MovieViewController: MovieDelegate {
+    func hehe() {
+        print("get 1")
+    }
+    
+    
 }
