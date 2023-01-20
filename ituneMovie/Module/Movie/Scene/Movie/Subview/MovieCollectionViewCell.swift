@@ -57,20 +57,16 @@ class MovieCollectionViewCell: UICollectionViewCell {
 }
 extension MovieCollectionViewCell {
     func favToggle(){
-        
-        guard
-            let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
-            var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else { return }
-        
         var fillColor: UIColor
         fillColor = .white
-        
-        if favMovieArray.contains(where: {$0.trackId == movie?.trackId}){
-            fillColor = .red
+        if let data = UserDefaults.standard.data(forKey: "FavMovieArray") {
+            if let favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) {
+                if favMovieArray.contains(where: {$0.trackId == movie?.trackId}){
+                    fillColor = .red
+                }
+            }
         }
-        
         favoriteImageView.image = UIImage(systemName: "heart.fill")?.withTintColor(fillColor, renderingMode: .alwaysOriginal)
-        
     }
 }
 
@@ -86,6 +82,7 @@ extension MovieCollectionViewCell {
            let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
            var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else {
             save(movies: [movie!])
+            favToggle()
             return
         }
         

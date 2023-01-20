@@ -15,6 +15,7 @@ class FavouriteMovieListViewController: UIViewController {
    
     @IBAction func closeButtonDidTap(_ sender: Any) {
         print("close pressed")
+        self.delegate?.refresh()
         self.dismiss(animated: true)
     }
     @IBOutlet weak var closeButton: UIButton!

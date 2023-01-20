@@ -127,6 +127,7 @@ protocol movieViewControllerDelegate {
     func updateMovieCollection(movies: [Movie])
     func showErrorAlert(errorMessage: String?)
     func testNav(selectedMovie: Movie)
+    func refresh()
 }
 
 extension MovieViewController: movieViewControllerDelegate {
@@ -146,6 +147,11 @@ extension MovieViewController: movieViewControllerDelegate {
         self.navigationController?.pushViewController(movieDetailController, animated: true)
     }
     
+    func refresh() {
+//        viewModel.getMovieList(url: url)
+//        self.movies = movies
+        self.movieCollectionView.reloadData()
+    }
     
 }
 
