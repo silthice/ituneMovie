@@ -102,6 +102,9 @@ extension FavouriteMovieListViewController: UICollectionViewDelegate {
         let cell = favMovieCollectionView.cellForItem(at: indexPath)
         movieDetailController.movieDetail = favMovies[indexPath.item]
         self.navigationController?.pushViewController(movieDetailController, animated: true)
+        
+//        let nav = UINavigationController(rootViewController: screen)
+//        return nav
     }
 }
 

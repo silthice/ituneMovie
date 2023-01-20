@@ -60,7 +60,7 @@
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionViewCell" id="T60-t6-Ynz" userLabel="FavouriteMovieCollectionViewCell" customClass="MovieCollectionViewCell" customModule="ituneMovie" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="74j-4Q-1hz" customClass="CollectionReusableViewionReusableView">
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="74j-4Q-1hz">
                                                     <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
