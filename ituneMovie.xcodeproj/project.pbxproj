@@ -11,6 +11,7 @@
 		80556E72295980100063E9BC /* UIColor + DynamicColor Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80556E71295980100063E9BC /* UIColor + DynamicColor Extension.swift */; };
 		808351DB2948BDD6009E0232 /* FavouriteMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808351DA2948BDD6009E0232 /* FavouriteMovieCollectionViewCell.swift */; };
 		808B46CC2935D679007906C4 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B46CB2935D679007906C4 /* UIColor + Extensions.swift */; };
+		80C7361B297A2EDA00E68222 /* ImageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7361A297A2EDA00E68222 /* ImageConstant.swift */; };
 		80CE67CB292F589C00687003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67CA292F589C00687003 /* AppDelegate.swift */; };
 		80CE67CD292F589C00687003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67CC292F589C00687003 /* SceneDelegate.swift */; };
 		80CE67CF292F589C00687003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67CE292F589C00687003 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		80556E71295980100063E9BC /* UIColor + DynamicColor Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + DynamicColor Extension.swift"; sourceTree = "<group>"; };
 		808351DA2948BDD6009E0232 /* FavouriteMovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteMovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		808B46CB2935D679007906C4 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		80C7361A297A2EDA00E68222 /* ImageConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstant.swift; sourceTree = "<group>"; };
 		80CE67C7292F589C00687003 /* ituneMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ituneMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CE67CA292F589C00687003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80CE67CC292F589C00687003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +100,6 @@
 				AD759C8BEEDF1A5D71526189 /* Pods-ituneMovie.debug.xcconfig */,
 				F5585DEA846D3A5027CD7C84 /* Pods-ituneMovie.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -117,6 +118,14 @@
 				80556E71295980100063E9BC /* UIColor + DynamicColor Extension.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		80C73619297A2EC800E68222 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				80C7361A297A2EDA00E68222 /* ImageConstant.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		80CE67BE292F589C00687003 = {
@@ -140,6 +149,7 @@
 		80CE67C9292F589C00687003 /* ituneMovie */ = {
 			isa = PBXGroup;
 			children = (
+				80C73619297A2EC800E68222 /* Constant */,
 				808B46CA2935D660007906C4 /* Helper */,
 				80CE67EB292F6BC100687003 /* Model */,
 				80CE67DE292F5AB500687003 /* Module */,
@@ -436,6 +446,7 @@
 				80556E72295980100063E9BC /* UIColor + DynamicColor Extension.swift in Sources */,
 				80CE67FD292F71B200687003 /* ItuneMovieBaseResponse.swift in Sources */,
 				808351DB2948BDD6009E0232 /* FavouriteMovieCollectionViewCell.swift in Sources */,
+				80C7361B297A2EDA00E68222 /* ImageConstant.swift in Sources */,
 				80CE6801292F73C200687003 /* MovieViewModel.swift in Sources */,
 				80CE67E7292F5D4F00687003 /* MovieViewController.swift in Sources */,
 				80CE6809293090AE00687003 /* MovieCollectionViewCell.swift in Sources */,

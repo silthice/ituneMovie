@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MovieCollectionViewCell: UICollectionViewCell {
 
@@ -35,10 +36,11 @@ class MovieCollectionViewCell: UICollectionViewCell {
         
         movieImageView.contentMode = .scaleAspectFill
         let url = URL(string: movie.artworkUrl100 ?? "")
-        let data = try? Data(contentsOf: url!)
-        if let data = data {
-            movieImageView.image = UIImage(data: data)
-        }
+        movieImageView.kf.setImage(with: url, placeholder: bannerPlaceHolder)
+//        let data = try? Data(contentsOf: url!)
+//        if let data = data {
+//            movieImageView.image = UIImage(data: data)
+//        }
         
         
         cellContentView.layer.borderColor = UIColor.white.cgColor

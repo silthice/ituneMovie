@@ -8,5 +8,8 @@ target 'ituneMovie' do
   # Pods for ituneMovie
   # UI
   pod 'SwiftRichString'
+  
+  #ImageUtil
+  pod 'Kingfisher', '~> 5.3.0'
 
 end

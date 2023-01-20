@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 protocol MovieDetailViewControllerDelegate: class {
     func test()
@@ -118,10 +119,11 @@ extension MovieDetailViewController {
         //movie image
         movieImageView.contentMode = .scaleAspectFill
         let url = URL(string: movieDetail?.artworkUrl100 ?? "")
-        let data = try? Data(contentsOf: url!)
-        if let data = data {
-            movieImageView.image = UIImage(data: data)
-        }
+        movieImageView.kf.setImage(with: url, placeholder: bannerPlaceHolder)
+//        let data = try? Data(contentsOf: url!)
+//        if let data = data {
+//            movieImageView.image = UIImage(data: data)
+//        }
         
         // substr get date instead date format
         var releaseDate = movieDetail?.releaseDate

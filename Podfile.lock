@@ -1,16 +1,20 @@
 PODS:
+  - Kingfisher (5.3.1)
   - SwiftRichString (3.7.2)
 
 DEPENDENCIES:
+  - Kingfisher (~> 5.3.0)
   - SwiftRichString
 
 SPEC REPOS:
   trunk:
+    - Kingfisher
     - SwiftRichString
 
 SPEC CHECKSUMS:
+  Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
   SwiftRichString: d61b807db1f8834c26fee92b6dd3e1be2dc5af03
 
-PODFILE CHECKSUM: 20c226c3c909e5b6a4703dccbee1a0c4c5b168c2
+PODFILE CHECKSUM: 5460749946ec249475adf5fa25feee33a6c7e848
 
 COCOAPODS: 1.11.3
