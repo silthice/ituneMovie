@@ -43,6 +43,7 @@ extension MovieDetailViewController {
     
     func setupNavigationBar(){
         navigationController?.navigationBar.backgroundColor = .darkGray
+        navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
@@ -54,7 +55,7 @@ extension MovieDetailViewController {
         
         guard
             let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
-            var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else { return }
+            let favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else { return }
         
         var fillColor: UIColor
         fillColor = .white
@@ -105,6 +106,7 @@ extension MovieDetailViewController {
         priceValueLabel.text = "$" + String(format: "%.2f", movieDetail!.trackPrice!)
         
         //movie image
+        movieImageView.layer.cornerRadius = 5
         movieImageView.contentMode = .scaleAspectFill
         let url = URL(string: movieDetail?.artworkUrl100 ?? "")
         movieImageView.kf.setImage(with: url, placeholder: bannerPlaceHolder)
@@ -114,7 +116,7 @@ extension MovieDetailViewController {
 //        }
         
         // substr get date instead date format
-        var releaseDate = movieDetail?.releaseDate
+        let releaseDate = movieDetail?.releaseDate
         releaseDateValueLabel.text = String(releaseDate!.prefix(10))
     }
 }

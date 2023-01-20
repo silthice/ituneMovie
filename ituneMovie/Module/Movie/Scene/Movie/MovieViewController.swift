@@ -89,7 +89,7 @@ extension MovieViewController: UICollectionViewDataSource {
 // MARK: - Extends CollectionViewDelegate protocol
 extension MovieViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = movieCollectionView.cellForItem(at: indexPath)
+//        let cell = movieCollectionView.cellForItem(at: indexPath)
         movieDetailController.movieDetail = movies[indexPath.item]
         self.navigationController?.pushViewController(movieDetailController, animated: true)
     }

@@ -43,18 +43,16 @@ class FavouriteMovieListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         setupUI()
+        title = "Favourites"
         
         guard let data = UserDefaults.standard.data(forKey: "FavMovieArray"),
-        var favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else { return }
+        let favMovieArray = try? JSONDecoder().decode([Movie].self, from: data) else { return }
         favMovies = favMovieArray
         
-        title = "TEST 123"
-        
-        
-        let button = UIButton(type: .custom)
         let image = UIImage(systemName: "xmark")?.withRenderingMode(.alwaysTemplate)
         closeButton.setImage(image, for: .normal)
-        let closeButtonColor: UIColor = .dynamicColor(light: UIColor(hexString: "#000000"), dark: UIColor(hexString: "#FFFFFF"))
+        let closeButtonColor: UIColor = .dynamicColor(light: UIColor(hexString: "#FFFFFF"), dark: UIColor(hexString: "#FFFFFF"))
+//        let closeButtonColor: UIColor = .dynamicColor(light: UIColor(hexString: "#000000"), dark: UIColor(hexString: "#FFFFFF"))
                 closeButton.tintColor = closeButtonColor
         
         favMovieCollectionView.dataSource = self
@@ -93,7 +91,7 @@ extension FavouriteMovieListViewController: UICollectionViewDataSource {
 
 extension FavouriteMovieListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = favMovieCollectionView.cellForItem(at: indexPath)
+//        let cell = favMovieCollectionView.cellForItem(at: indexPath)
         movieDetailController.movieDetail = favMovies[indexPath.item]
         self.navigationController?.pushViewController(movieDetailController, animated: true)
     }
