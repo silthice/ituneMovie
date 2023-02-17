@@ -95,7 +95,6 @@ extension MovieViewController: UICollectionViewDelegate {
     }
 }
 
-
 // MARK: - MVVM
 protocol movieViewControllerDelegate {
     func updateMovieCollection(movies: [Movie])
