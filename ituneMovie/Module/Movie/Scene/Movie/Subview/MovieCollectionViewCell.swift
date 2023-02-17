@@ -31,7 +31,12 @@ class MovieCollectionViewCell: UICollectionViewCell {
         self.movie = movie
         
         trackNameValueLabel.text = movie.trackName
-        priceValueLabel.text = "$" + String(format: "%.2f", movie.trackPrice!)
+        
+        if let moviePrice = movie.trackPrice {
+            priceValueLabel.text = "$" + String(format: "%.2f", moviePrice)
+        } else {
+            priceValueLabel.text = "N/A"
+        }
         genreValueLabel.text = movie.primaryGenreName
         
         movieImageView.contentMode = .scaleAspectFill

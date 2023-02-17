@@ -103,8 +103,11 @@ extension MovieDetailViewController {
         genreValueLabel.text = movieDetail?.primaryGenreName
         artistValueLabel.text = movieDetail?.artistName
         descriptionValueLabel.text = movieDetail?.longDescription
-        priceValueLabel.text = "$" + String(format: "%.2f", movieDetail!.trackPrice!)
-        
+        if let moviePrice = movieDetail?.trackPrice {
+            priceValueLabel.text = "$" + String(format: "%.2f", moviePrice)
+        } else {
+            priceValueLabel.text = "N/A"
+        }
         //movie image
         movieImageView.layer.cornerRadius = 5
         movieImageView.contentMode = .scaleAspectFill
