@@ -42,12 +42,6 @@ class MovieCollectionViewCell: UICollectionViewCell {
         movieImageView.contentMode = .scaleAspectFill
         let url = URL(string: movie.artworkUrl100 ?? "")
         movieImageView.kf.setImage(with: url, placeholder: bannerPlaceHolder)
-//        let data = try? Data(contentsOf: url!)
-//        if let data = data {
-//            movieImageView.image = UIImage(data: data)
-//        }
-        
-        
         cellContentView.layer.borderColor = UIColor.white.cgColor
         cellContentView.layer.borderWidth = 2
         cellContentView.layer.cornerRadius = 6

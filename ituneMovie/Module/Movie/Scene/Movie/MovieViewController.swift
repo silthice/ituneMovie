@@ -36,8 +36,6 @@ class MovieViewController: UIViewController {
     let viewModel = MovieViewModel()
     let movieDetailController = MovieDetailViewController()
     
-    
-    
     // MARK: - Constant
     let url: String = "https://itunes.apple.com/search?term=star&country=au&media=movie&;all"
     
@@ -89,7 +87,6 @@ extension MovieViewController: UICollectionViewDataSource {
 // MARK: - Extends CollectionViewDelegate protocol
 extension MovieViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let cell = movieCollectionView.cellForItem(at: indexPath)
         movieDetailController.movieDetail = movies[indexPath.item]
         self.navigationController?.pushViewController(movieDetailController, animated: true)
     }

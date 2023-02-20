@@ -7,23 +7,8 @@
 
 import Foundation
 
-//struct Movie {
-//    let trackName: String
-//    let artworkUrl60: String
-//    let trackPrice: Double
-//    let primaryGenreName: String
-//    
-//    init(trackName: String, artworkUrl60: String, trackPrice: Double, primaryGenreName: String) {
-//        self.trackName = trackName
-//        self.artworkUrl60 = artworkUrl60
-//        self.trackPrice = trackPrice
-//        self.primaryGenreName = primaryGenreName
-//    }
-//}
-
 struct Movie : Codable, Equatable {
     let trackId : Int
-//    let trackId : Int?
     let trackName : String?
     let artworkUrl60 : String?
     let artworkUrl100 : String?
@@ -107,7 +92,6 @@ struct Movie : Codable, Equatable {
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-//        trackId = try values.decodeIfPresent(Int.self, forKey: .trackId)
         trackId = try values.decode(Int.self, forKey: .trackId)
         trackName = try values.decodeIfPresent(String.self, forKey: .trackName)
         artworkUrl60 = try values.decodeIfPresent(String.self, forKey: .artworkUrl60)

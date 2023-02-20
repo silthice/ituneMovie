@@ -20,6 +20,7 @@ class FavouriteMovieListViewController: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var favMovieCollectionView: UICollectionView!
     @IBOutlet weak var favMovieCollectionViewFlowLayout: UICollectionViewFlowLayout!
+    
     // MARK: - Navigation
     
     // MARK: - Constant
@@ -30,8 +31,6 @@ class FavouriteMovieListViewController: UIViewController {
     
     // MARK: - MVVM
     let movieDetailController = MovieDetailViewController()
-    
-    
     
     // MARK: - Constant
     
@@ -52,8 +51,7 @@ class FavouriteMovieListViewController: UIViewController {
         let image = UIImage(systemName: "xmark")?.withRenderingMode(.alwaysTemplate)
         closeButton.setImage(image, for: .normal)
         let closeButtonColor: UIColor = .dynamicColor(light: UIColor(hexString: "#FFFFFF"), dark: UIColor(hexString: "#FFFFFF"))
-//        let closeButtonColor: UIColor = .dynamicColor(light: UIColor(hexString: "#000000"), dark: UIColor(hexString: "#FFFFFF"))
-                closeButton.tintColor = closeButtonColor
+        closeButton.tintColor = closeButtonColor
         
         favMovieCollectionView.dataSource = self
         favMovieCollectionView.delegate = self
@@ -91,7 +89,6 @@ extension FavouriteMovieListViewController: UICollectionViewDataSource {
 
 extension FavouriteMovieListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let cell = favMovieCollectionView.cellForItem(at: indexPath)
         movieDetailController.movieDetail = favMovies[indexPath.item]
         self.navigationController?.pushViewController(movieDetailController, animated: true)
     }

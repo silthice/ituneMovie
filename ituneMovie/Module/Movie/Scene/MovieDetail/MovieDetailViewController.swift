@@ -28,8 +28,6 @@ class MovieDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Details"
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -113,11 +111,6 @@ extension MovieDetailViewController {
         movieImageView.contentMode = .scaleAspectFill
         let url = URL(string: movieDetail?.artworkUrl100 ?? "")
         movieImageView.kf.setImage(with: url, placeholder: bannerPlaceHolder)
-//        let data = try? Data(contentsOf: url!)
-//        if let data = data {
-//            movieImageView.image = UIImage(data: data)
-//        }
-        
         // substr get date instead date format
         let releaseDate = movieDetail?.releaseDate
         releaseDateValueLabel.text = String(releaseDate!.prefix(10))
