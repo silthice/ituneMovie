@@ -58,7 +58,7 @@ class FavouriteMovieListViewController: UIViewController {
         favMovieCollectionView.delegate = self
         self.navigationController?.navigationBar.isHidden = true
         
-        if favMovies.count > 1 {
+        if favMovies.count > 0 {
             emptyViewContainer.isHidden = true
         } else {
             emptyViewContainer.isHidden = false
