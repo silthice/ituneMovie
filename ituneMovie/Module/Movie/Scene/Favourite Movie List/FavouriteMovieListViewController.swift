@@ -21,6 +21,7 @@ class FavouriteMovieListViewController: UIViewController {
     @IBOutlet weak var favMovieCollectionView: UICollectionView!
     @IBOutlet weak var favMovieCollectionViewFlowLayout: UICollectionViewFlowLayout!
     
+    @IBOutlet weak var emptyViewContainer: UIView!
     // MARK: - Navigation
     
     // MARK: - Constant
@@ -57,6 +58,11 @@ class FavouriteMovieListViewController: UIViewController {
         favMovieCollectionView.delegate = self
         self.navigationController?.navigationBar.isHidden = true
         
+        if favMovies.count > 1 {
+            emptyViewContainer.isHidden = true
+        } else {
+            emptyViewContainer.isHidden = false
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

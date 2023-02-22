@@ -10,7 +10,6 @@
 		6D252F78C0E2429AFB6B26C1 /* Pods_ituneMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C04A5655739CEF42EBDD9CD /* Pods_ituneMovie.framework */; };
 		80556E72295980100063E9BC /* UIColor + DynamicColor Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80556E71295980100063E9BC /* UIColor + DynamicColor Extension.swift */; };
 		808351DB2948BDD6009E0232 /* FavouriteMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808351DA2948BDD6009E0232 /* FavouriteMovieCollectionViewCell.swift */; };
-		808B46CC2935D679007906C4 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B46CB2935D679007906C4 /* UIColor + Extensions.swift */; };
 		80C7361B297A2EDA00E68222 /* ImageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7361A297A2EDA00E68222 /* ImageConstant.swift */; };
 		80C7361D297A7E2B00E68222 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7361C297A7E2B00E68222 /* APIRequest.swift */; };
 		80CE67CB292F589C00687003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67CA292F589C00687003 /* AppDelegate.swift */; };
@@ -20,13 +19,6 @@
 		80CE67D7292F589D00687003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CE67D5292F589D00687003 /* LaunchScreen.storyboard */; };
 		80CE67E7292F5D4F00687003 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67E5292F5D4F00687003 /* MovieViewController.swift */; };
 		80CE67EA292F5DD800687003 /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CE67E9292F5DD800687003 /* Movie.storyboard */; };
-		80CE67EE292F6BD900687003 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67ED292F6BD900687003 /* APIService.swift */; };
-		80CE67F2292F6D2800687003 /* GetMovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67F1292F6D2800687003 /* GetMovieList.swift */; };
-		80CE67F6292F6D9800687003 /* ItuneMovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67F5292F6D9800687003 /* ItuneMovieAPI.swift */; };
-		80CE67F8292F6E5200687003 /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67F7292F6E5200687003 /* MovieAPI.swift */; };
-		80CE67FB292F71A600687003 /* ItuneMovieBaseTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67FA292F71A600687003 /* ItuneMovieBaseTarget.swift */; };
-		80CE67FD292F71B200687003 /* ItuneMovieBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67FC292F71B200687003 /* ItuneMovieBaseResponse.swift */; };
-		80CE67FF292F71BD00687003 /* ItuneMovieBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE67FE292F71BD00687003 /* ItuneMovieBaseRequest.swift */; };
 		80CE6801292F73C200687003 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE6800292F73C200687003 /* MovieViewModel.swift */; };
 		80CE6803292F82B600687003 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE6802292F82B600687003 /* Movie.swift */; };
 		80CE680529305DCD00687003 /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CE680429305DCD00687003 /* MovieListResponse.swift */; };
@@ -46,7 +38,6 @@
 /* Begin PBXFileReference section */
 		80556E71295980100063E9BC /* UIColor + DynamicColor Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + DynamicColor Extension.swift"; sourceTree = "<group>"; };
 		808351DA2948BDD6009E0232 /* FavouriteMovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteMovieCollectionViewCell.swift; sourceTree = "<group>"; };
-		808B46CB2935D679007906C4 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
 		80C7361A297A2EDA00E68222 /* ImageConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstant.swift; sourceTree = "<group>"; };
 		80C7361C297A7E2B00E68222 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		80CE67C7292F589C00687003 /* ituneMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ituneMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,13 +49,6 @@
 		80CE67D8292F589E00687003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80CE67E5292F5D4F00687003 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		80CE67E9292F5DD800687003 /* Movie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Movie.storyboard; sourceTree = "<group>"; };
-		80CE67ED292F6BD900687003 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		80CE67F1292F6D2800687003 /* GetMovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieList.swift; sourceTree = "<group>"; };
-		80CE67F5292F6D9800687003 /* ItuneMovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItuneMovieAPI.swift; sourceTree = "<group>"; };
-		80CE67F7292F6E5200687003 /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
-		80CE67FA292F71A600687003 /* ItuneMovieBaseTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItuneMovieBaseTarget.swift; sourceTree = "<group>"; };
-		80CE67FC292F71B200687003 /* ItuneMovieBaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItuneMovieBaseResponse.swift; sourceTree = "<group>"; };
-		80CE67FE292F71BD00687003 /* ItuneMovieBaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItuneMovieBaseRequest.swift; sourceTree = "<group>"; };
 		80CE6800292F73C200687003 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		80CE6802292F82B600687003 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		80CE680429305DCD00687003 /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
@@ -116,7 +100,6 @@
 		808B46CA2935D660007906C4 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				808B46CB2935D679007906C4 /* UIColor + Extensions.swift */,
 				80556E71295980100063E9BC /* UIColor + DynamicColor Extension.swift */,
 				80C7361C297A7E2B00E68222 /* APIRequest.swift */,
 			);
@@ -232,8 +215,6 @@
 		80CE67EC292F6BC900687003 /* ItuneMovieAPI */ = {
 			isa = PBXGroup;
 			children = (
-				80CE67F5292F6D9800687003 /* ItuneMovieAPI.swift */,
-				80CE67ED292F6BD900687003 /* APIService.swift */,
 				80CE67F9292F718A00687003 /* Model */,
 				80CE67EF292F6CF200687003 /* Endpoint */,
 			);
@@ -251,8 +232,6 @@
 		80CE67F0292F6D1A00687003 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
-				80CE67F7292F6E5200687003 /* MovieAPI.swift */,
-				80CE67F1292F6D2800687003 /* GetMovieList.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -260,9 +239,6 @@
 		80CE67F9292F718A00687003 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				80CE67FA292F71A600687003 /* ItuneMovieBaseTarget.swift */,
-				80CE67FC292F71B200687003 /* ItuneMovieBaseResponse.swift */,
-				80CE67FE292F71BD00687003 /* ItuneMovieBaseRequest.swift */,
 				80CE6802292F82B600687003 /* Movie.swift */,
 				80CE680429305DCD00687003 /* MovieListResponse.swift */,
 			);
@@ -437,17 +413,10 @@
 				80CE6803292F82B600687003 /* Movie.swift in Sources */,
 				80F2342C29487406004DC739 /* DrawerMenuViewController.swift in Sources */,
 				80CE67CF292F589C00687003 /* ViewController.swift in Sources */,
-				80CE67EE292F6BD900687003 /* APIService.swift in Sources */,
 				80CE67CB292F589C00687003 /* AppDelegate.swift in Sources */,
 				80F2343A2948801B004DC739 /* FavouriteMovieListViewController.swift in Sources */,
-				80CE67F6292F6D9800687003 /* ItuneMovieAPI.swift in Sources */,
 				80CE67CD292F589C00687003 /* SceneDelegate.swift in Sources */,
-				80CE67FB292F71A600687003 /* ItuneMovieBaseTarget.swift in Sources */,
-				808B46CC2935D679007906C4 /* UIColor + Extensions.swift in Sources */,
-				80CE67FF292F71BD00687003 /* ItuneMovieBaseRequest.swift in Sources */,
-				80CE67F8292F6E5200687003 /* MovieAPI.swift in Sources */,
 				80556E72295980100063E9BC /* UIColor + DynamicColor Extension.swift in Sources */,
-				80CE67FD292F71B200687003 /* ItuneMovieBaseResponse.swift in Sources */,
 				808351DB2948BDD6009E0232 /* FavouriteMovieCollectionViewCell.swift in Sources */,
 				80C7361B297A2EDA00E68222 /* ImageConstant.swift in Sources */,
 				80CE6801292F73C200687003 /* MovieViewModel.swift in Sources */,
@@ -455,7 +424,6 @@
 				80CE6809293090AE00687003 /* MovieCollectionViewCell.swift in Sources */,
 				80F23434294876ED004DC739 /* DrawerSlideAnimation.swift in Sources */,
 				80CE680529305DCD00687003 /* MovieListResponse.swift in Sources */,
-				80CE67F2292F6D2800687003 /* GetMovieList.swift in Sources */,
 				80CE68192935A48300687003 /* MovieDetailViewController.swift in Sources */,
 				80CE680E2930AF3200687003 /* MovieCollectionReusableView.swift in Sources */,
 				80F234322948763E004DC739 /* DrawerPresentationController.swift in Sources */,

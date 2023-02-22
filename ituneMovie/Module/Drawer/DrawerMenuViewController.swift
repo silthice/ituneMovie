@@ -9,6 +9,7 @@ import UIKit
 
 class DrawerMenuViewController: UIViewController {
     
+    @IBOutlet weak var drawerBackgroundView: UIView!
     var delegate: movieViewControllerDelegate?
     
     @IBAction func favouriteMoviesButton(_ sender: Any) {
@@ -37,6 +38,8 @@ class DrawerMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        drawerBackgroundView.backgroundColor = .darkGray
     }
     
     init() {

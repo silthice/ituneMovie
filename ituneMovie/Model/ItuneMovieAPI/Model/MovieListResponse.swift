@@ -24,21 +24,3 @@ struct MovieListResponse : Codable {
     }
 
 }
-
-//struct Response : Codable {
-//    let resultCount : Int?
-//    let results : [Movie]?
-//
-//    enum CodingKeys: String, CodingKey {
-//
-//        case resultCount = "resultCount"
-//        case results = "results"
-//    }
-//
-//    init(from decoder: Decoder) throws {
-//        let values = try decoder.container(keyedBy: CodingKeys.self)
-//        resultCount = try values.decodeIfPresent(Int.self, forKey: .resultCount)
-//        results = try values.decodeIfPresent([Movie].self, forKey: .results)
-//    }
-//
-//}
